@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Rory Margaglio — professional seamstress specialising in garment alterations, custom accessories, and precision medical textile work." />
+  <title>Rory Margaglio | Seamstress Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ====== Navigation ====== -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#home" class="nav__brand">Rory Margaglio</a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ====== Hero ====== -->
+  <section class="hero" id="home" aria-labelledby="hero-heading">
+    <p class="hero__eyebrow">Professional Seamstress &amp; Textile Specialist</p>
+    <h1 class="hero__title" id="hero-heading">Rory Margaglio</h1>
+    <hr class="hero__divider" aria-hidden="true" />
+    <p class="hero__tagline">
+      Crafting precision and beauty in every stitch — from couture alterations<br class="hide-mobile" />
+      and handmade accessories to life-saving medical textile work.
+    </p>
+    <div class="hero__cta">
+      <a href="#portfolio" class="btn btn--primary">View Portfolio</a>
+      <a href="#contact" class="btn btn--outline">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- ====== About ====== -->
+  <section class="section" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about__grid fade-in">
+
+        <!-- Headshot placeholder -->
+        <div class="about__image-wrap">
+          <div class="about__photo-placeholder" role="img" aria-label="Placeholder for headshot photograph">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+            </svg>
+            <span>Photo Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- Bio -->
+        <div class="about__content">
+          <p class="section-label">About Me</p>
+          <h2 class="section-title" id="about-heading">Precision, Passion,<br />and a Perfect Seam</h2>
+          <p>
+            I am a professional seamstress with a deep love for the craft — whether I'm transforming a beloved dress to fit like it was made for you, constructing a bespoke bag from scratch, or performing the delicate stitchwork required in cutting-edge medical research.
+          </p>
+          <p>
+            My background spans fashion alterations and custom garment construction to highly specialised work suturing artificial heart valves for a medical research start-up. Every project, no matter the scale, receives the same meticulous attention to detail and commitment to quality.
+          </p>
+          <p>
+            I am available for alterations, custom commissions, and collaborative creative projects. I would love to help bring your vision to life.
+          </p>
+
+          <div class="skills" aria-label="Skills">
+            <span class="skill-tag">Garment Alterations</span>
+            <span class="skill-tag">Custom Bag Construction</span>
+            <span class="skill-tag">Pattern Drafting</span>
+            <span class="skill-tag">Hand Stitching</span>
+            <span class="skill-tag">Medical Suturing</span>
+            <span class="skill-tag">Fabric Selection</span>
+            <span class="skill-tag">Bridal &amp; Formalwear</span>
+            <span class="skill-tag">Leather &amp; Canvas</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Portfolio ====== -->
+  <section class="section section--alt" id="portfolio" aria-labelledby="portfolio-heading">
+    <div class="container">
+      <p class="section-label">Work</p>
+      <h2 class="section-title" id="portfolio-heading">Portfolio</h2>
+      <p class="section-intro">A selection of projects across alterations, custom creations, and precision medical work.</p>
+
+      <!-- Filter buttons -->
+      <div class="portfolio__filters" role="group" aria-label="Filter portfolio by category">
+        <button class="filter-btn is-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="alterations">Alterations</button>
+        <button class="filter-btn" data-filter="custom">Custom &amp; Bags</button>
+        <button class="filter-btn" data-filter="medical">Medical</button>
+      </div>
+
+      <div class="portfolio__grid" id="portfolioGrid">
+
+        <!-- Alterations 1 -->
+        <article class="card fade-in" data-category="alterations">
+          <div class="card__image">
+            <div class="card__placeholder" role="img" aria-label="Placeholder for wedding dress alteration project">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 3v1m6-1v1M9 8v1m6-1v1m-6 5v1m6-1v1M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+              </svg>
+              <span class="card__placeholder-label">Photo Placeholder</span>
+            </div>
+            <span class="card__badge">Alterations</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Bridal Gown Alteration</h3>
+            <p class="card__desc">Full resizing and hemming of an A-line wedding gown, including bodice and bustle adjustments for a perfect fit on the wedding day.</p>
+          </div>
+        </article>
+
+        <!-- Alterations 2 -->
+        <article class="card fade-in" data-category="alterations">
+          <div class="card__image">
+            <div class="card__placeholder" role="img" aria-label="Placeholder for cocktail dress alteration project">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 3v1m6-1v1M9 8v1m6-1v1m-6 5v1m6-1v1M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+              </svg>
+              <span class="card__placeholder-label">Photo Placeholder</span>
+            </div>
+            <span class="card__badge">Alterations</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Cocktail Dress Resizing</h3>
+            <p class="card__desc">Taking in a vintage silk cocktail dress by two sizes while preserving the original silhouette and hand-applied beadwork.</p>
+          </div>
+        </article>
+
+        <!-- Alterations 3 -->
+        <article class="card fade-in" data-category="alterations">
+          <div class="card__image">
+            <div class="card__placeholder" role="img" aria-label="Placeholder for tailored suit alteration project">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 3v1m6-1v1M9 8v1m6-1v1m-6 5v1m6-1v1M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+              </svg>
+              <span class="card__placeholder-label">Photo Placeholder</span>
+            </div>
+            <span class="card__badge">Alterations</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Tailored Suit Alterations</h3>
+            <p class="card__desc">Sleeve shortening, waist suppression, and trouser tapering on a classic wool blazer and trouser set.</p>
+          </div>
+        </article>
+
+        <!-- Custom Bags 1 -->
+        <article class="card fade-in" data-category="custom">
+          <div class="card__image">
+            <div class="card__placeholder" role="img" aria-label="Placeholder for custom tote bag project">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+              </svg>
+              <span class="card__placeholder-label">Photo Placeholder</span>
+            </div>
+            <span class="card__badge">Custom</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Structured Canvas Tote</h3>
+            <p class="card__desc">Custom-constructed heavy-duty canvas tote with leather handles, internal pockets, and personalised hand-stitched monogram.</p>
+          </div>
+        </article>
+
+        <!-- Custom Bags 2 -->
+        <article class="card fade-in" data-category="custom">
+          <div class="card__image">
+            <div class="card__placeholder" role="img" aria-label="Placeholder for leather crossbody bag project">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+              </svg>
+              <span class="card__placeholder-label">Photo Placeholder</span>
+            </div>
+            <span class="card__badge">Custom</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Leather Crossbody Bag</h3>
+            <p class="card__desc">Handcrafted full-grain leather crossbody with adjustable strap, brass hardware, and a magnetic clasp closure.</p>
+          </div>
+        </article>
+
+        <!-- Custom Bags 3 -->
+        <article class="card fade-in" data-category="custom">
+          <div class="card__image">
+            <div class="card__placeholder" role="img" aria-label="Placeholder for quilted evening clutch project">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+              </svg>
+              <span class="card__placeholder-label">Photo Placeholder</span>
+            </div>
+            <span class="card__badge">Custom</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Quilted Evening Clutch</h3>
+            <p class="card__desc">Elegant quilted satin clutch with hand-sewn lining, concealed zip closure, and wrist strap — created for a client's black-tie event.</p>
+          </div>
+        </article>
+
+        <!-- Medical 1 -->
+        <article class="card fade-in" data-category="medical">
+          <div class="card__image">
+            <div class="card__placeholder" role="img" aria-label="Placeholder for heart valve suturing work">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+              <span class="card__placeholder-label">Photo Placeholder</span>
+            </div>
+            <span class="card__badge">Medical</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Artificial Heart Valve Assembly</h3>
+            <p class="card__desc">Precision hand-suturing of textile cuffs onto prosthetic cardiac valves at a medical research start-up, following strict sterile protocols.</p>
+          </div>
+        </article>
+
+        <!-- Medical 2 -->
+        <article class="card fade-in" data-category="medical">
+          <div class="card__image">
+            <div class="card__placeholder" role="img" aria-label="Placeholder for medical textile quality inspection">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+              </svg>
+              <span class="card__placeholder-label">Photo Placeholder</span>
+            </div>
+            <span class="card__badge">Medical</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Medical-Grade Quality Assurance</h3>
+            <p class="card__desc">Inspection and verification of suture integrity and fabric attachment on implantable cardiac devices under magnification, to ISO and FDA standards.</p>
+          </div>
+        </article>
+
+        <!-- Medical 3 -->
+        <article class="card fade-in" data-category="medical">
+          <div class="card__image">
+            <div class="card__placeholder" role="img" aria-label="Placeholder for prosthetic textile component work">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+              </svg>
+              <span class="card__placeholder-label">Photo Placeholder</span>
+            </div>
+            <span class="card__badge">Medical</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Prosthetic Textile Components</h3>
+            <p class="card__desc">Preparation and assembly of woven polyester fabric components used in next-generation transcatheter heart valve prototypes.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Experience ====== -->
+  <section class="section" id="experience" aria-labelledby="experience-heading">
+    <div class="container">
+      <p class="section-label">Experience</p>
+      <h2 class="section-title" id="experience-heading">Professional Background</h2>
+      <p class="section-intro">A track record of precision work across fashion, custom creation, and medical research.</p>
+
+      <div class="experience__grid fade-in">
+
+        <div class="experience-card">
+          <p class="experience-card__role">Textile Specialist — Heart Valve Assembly</p>
+          <p class="experience-card__org">Medical Research Start-Up (Confidential)</p>
+          <p class="experience-card__dates">2022 – Present</p>
+          <p class="experience-card__desc">
+            Hand-suture textile cuffs and fabric components onto prosthetic cardiac valves in a regulated cleanroom environment. Responsible for quality inspection of finished assemblies and adherence to documented work instructions under FDA design-control procedures.
+          </p>
+        </div>
+
+        <div class="experience-card">
+          <p class="experience-card__role">Freelance Seamstress</p>
+          <p class="experience-card__org">Self-Employed</p>
+          <p class="experience-card__dates">2018 – Present</p>
+          <p class="experience-card__desc">
+            Provide bespoke alteration services for bridal, formalwear, and everyday garments. Design and construct custom bags, accessories, and home soft furnishings. Build strong client relationships through careful consultation, precise fitting, and timely delivery.
+          </p>
+        </div>
+
+        <div class="experience-card">
+          <p class="experience-card__role">Alterations Specialist</p>
+          <p class="experience-card__org">Local Bridal Boutique (Placeholder)</p>
+          <p class="experience-card__dates">2019 – 2022</p>
+          <p class="experience-card__desc">
+            Performed alterations and restorations on bridal gowns and formal attire. Managed the full alterations process from initial fitting through final press and hand-off, regularly working with luxury fabrics including silk charmeuse, tulle, and beaded lace.
+          </p>
+        </div>
+
+        <div class="experience-card">
+          <p class="experience-card__role">Sewing &amp; Textile Arts Education</p>
+          <p class="experience-card__org">Placeholder Institution</p>
+          <p class="experience-card__dates">Graduated 2018</p>
+          <p class="experience-card__desc">
+            Formal training in garment construction, pattern drafting, draping, and textile science. Completed coursework in tailoring, couture techniques, and fashion illustration. Add your specific certifications, courses, or degree here.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Testimonials ====== -->
+  <section class="section section--alt" id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <p class="section-label">Testimonials</p>
+      <h2 class="section-title" id="testimonials-heading">What Clients Say</h2>
+      <p class="section-intro">Placeholder testimonials — replace with genuine client feedback.</p>
+
+      <div class="testimonials__grid fade-in">
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
+          <p class="testimonial-card__text">Rory transformed my off-the-rack wedding dress into something that felt completely custom. Every detail was perfect — I couldn't believe how beautifully it fit.</p>
+          <p class="testimonial-card__author">Jane D.</p>
+          <p class="testimonial-card__role">Bride, 2024</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
+          <p class="testimonial-card__text">The custom bag Rory made for me is an absolute work of art. Sturdy, beautiful, and exactly what I envisioned. I get compliments everywhere I take it.</p>
+          <p class="testimonial-card__author">Maria T.</p>
+          <p class="testimonial-card__role">Custom Commission Client</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</div>
+          <p class="testimonial-card__text">Rory's hand skills and attention to detail are exceptional. Her work on our prosthetic valve prototypes has been consistently flawless and meets our most stringent quality standards.</p>
+          <p class="testimonial-card__author">Research Lead</p>
+          <p class="testimonial-card__role">Medical Research Start-Up</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Contact ====== -->
+  <section class="section" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact__inner">
+        <div class="contact__info fade-in">
+          <p class="section-label">Get in Touch</p>
+          <h2 class="section-title" id="contact-heading">Let's Work Together</h2>
+          <p>
+            Whether you need a garment altered, a custom piece created, or have a specialist textile project in mind — I'd love to hear from you. Please reach out via the form or contact details below.
+          </p>
+          <div class="contact__detail">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+            </svg>
+            <a href="mailto:rory@example.com">rory@example.com</a>
+          </div>
+          <div class="contact__detail">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+            </svg>
+            <span>Your City, State (Placeholder)</span>
+          </div>
+          <div class="contact__detail">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+            </svg>
+            <a href="tel:+10000000000">(000) 000-0000 (Placeholder)</a>
+          </div>
+        </div>
+
+        <form class="contact__form fade-in" action="#" method="POST" novalidate aria-label="Contact form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" autocomplete="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Type of Request</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service…</option>
+              <option value="alteration">Garment Alteration</option>
+              <option value="custom-bag">Custom Bag or Accessory</option>
+              <option value="custom-garment">Custom Garment</option>
+              <option value="medical">Medical / Specialist Textile</option>
+              <option value="other">Other / General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Footer ====== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__name">Rory Margaglio</p>
+      <p class="footer__copy">&copy; <span id="footerYear"></span> Rory Margaglio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ====== Scripts ====== -->
+  <script>
+    // Dynamic copyright year
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    toggle.addEventListener('click', function () {
+      const isOpen = navLinks.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    // Close mobile nav when a link is clicked
+    navLinks.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navLinks.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Portfolio filter
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('#portfolioGrid .card');
+
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        filterBtns.forEach(function (b) { b.classList.remove('is-active'); });
+        btn.classList.add('is-active');
+
+        const filter = btn.getAttribute('data-filter');
+        cards.forEach(function (card) {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Scroll fade-in animation
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.fade-in').forEach(function (el) {
+        observer.observe(el);
+      });
+    } else {
+      // Fallback: show all immediately
+      document.querySelectorAll('.fade-in').forEach(function (el) {
+        el.classList.add('is-visible');
+      });
+    }
+  </script>
+</body>
+</html>
